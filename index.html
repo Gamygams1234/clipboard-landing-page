@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
@@ -16,12 +18,12 @@
 
 <body>
     <div class="content">
-        <header class="container">
-            <div class="row main-logo">
+        <header class="container mb-5 pb-5 justify-content-center">
+            <div class="row main-logo ">
                 <img src="./images/logo.svg" alt="logo">
 
             </div>
-            <div class="row mt-5">
+            <div class="row mt-2 ">
                 <h1 class="fw-600 dark-grey-blue">
                     A history of everything you copy
                 </h1>
@@ -33,14 +35,138 @@
             </div>
             <div class="row mt-5 container justify-content-md-center">
                 <button type="button " class="btn seagreen-btn col-md-4 mt-3 mb-3">Download for iOS</button>
-                <button type="button " class="btn offset-md-1 blue-btn col-md-4 mt-3 mb-3">Download for Android</button>
+                <button type="button " class="btn offset-md-1 blue-btn col-md-4 mt-3 mb-3">Download for Mac</button>
                 <!-- <a class="btn blue-btn col-md-5" href="#" role="button mt-3 mb-3">Link</a> -->
             </div>
         </header>
-        <section class="container">
+        <div class="container mt-5 mb-5 section-2 pt-3 pb-3 justify-content-md-center">
+            <h2 class="fw-600 dark-grey-blue ">
+                Keep track of your snippets
+            </h2>
+            <p class="mt-4 grey-blue fw-400 max">Clipboard allows you to track and organize everything you copy.
+                Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets
+                immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
 
+        </div>
+        <div class="section-3 mt-5 mb-5 container-fluid">
+            <div class="computer-image col-12">
+                <img src="./images/image-computer.png" alt="">
+            </div>
+            <div class="paragraphs mt-5 mb-5">
+                <div class="paragraph">
+                    <h3 class="fw-600 dark-grey-blue max">
+                        Quick Search
+                    </h3>
+                    <p class="mt-4 grey-blue fw-400 max">Easily search your snippets by content, category, web address,
+                        application, and more.</p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="fw-600 dark-grey-blue max">
+                        iCloud Sync
+                    </h3>
+                    <p class="mt-4 grey-blue fw-400 max">Instantly saves and syncs snippets across all your devices.</p>
+                </div>
+                <div class="paragraph">
+                    <h3 class="fw-600 dark-grey-blue max">
+                        Complete History
+                    </h3>
+                    <p class="mt-4 grey-blue fw-400 max">Retrieve any snippets from the first moment you started using
+                        the
+                        app.</p>
+                </div>
+            </div>
 
-        </section>
+        </div>
+        <div class="section-4 container mt-5 mb-5 justify-content-center">
+            <div class="row  mt-4 mb-4">
+                <h2 class="fw-600 dark-grey-blue">
+                    Access Clipboard Anywhere
+                </h2>
+                <p class="mt-4 grey-blue fw-400">
+                    Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few
+                    simple clicks.</p>
+            </div>
+            <div class="image row mt-4 mb-4">
+                <img src="./images/image-devices.png" alt="">
+            </div>
+
+        </div>
+        <div class="section-5 container justify-content-center">
+            <div class="row  mt-4 mb-4">
+                <h2 class="fw-600 dark-grey-blue">
+                    Supercharge your workflow
+                </h2>
+                <p class="mt-4 grey-blue fw-400">
+                    We’ve got the tools to boost your productivity.</p>
+            </div>
+        </div>
+        <div class="section-6 mt-5 mb-5 container">
+            <div class="item">
+                <img src="./images/icon-blacklist.svg" class="mt-4 mb-4" alt="">
+                <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
+                    Create blacklists
+                </h3>
+                <p class="mt-4 mb-4 grey-blue fw-400">
+                    Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+            </div>
+            <div class="item">
+                <img src="./images/icon-text.svg" class="mt-4 mb-4" alt="">
+                <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
+                    Plain text snippets
+                </h3>
+                <p class="mt-4 mb-4 grey-blue fw-400">
+                    Remove unwanted formatting from copied text for a consistent look.</p>
+            </div>
+            <div class="item">
+                <img src="./images/icon-preview.svg" class="mt-4 mb-4" alt="">
+                <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
+                    Sneak preview
+                </h3>
+                <p class="mt-4 mb-4 grey-blue fw-400">
+                    Quick preview of all snippets on your Clipboard for easy access.</p>
+            </div>
+        </div>
+        <div class="section-7 mt-5 mb-5  container-fluid">
+            <img src="./images/logo-google.png" class="mt-4 mb-4" alt="">
+            <img src="./images/logo-ibm.png" class="mt-4 mb-4" alt="">
+            <img src="./images/logo-microsoft.png" class="mt-4 mb-4" alt="">
+            <img src="./images/logo-hp.png" class="mt-4 mb-4" alt="">
+            <img src="./images/logo-vector-graphics.png" class="mt-4 mb-4" alt="">
+
+        </div>
+        <div class="section-8 container mb-5 pb-5 justify-content-center mt-5">
+            <div class="row mt-2 ">
+                <h2 class="fw-600 dark-grey-blue">
+                    Clipboard for iOS and Mac OS
+                </h2>
+                <p class="mt-4 grey-blue fw-400">Available for free on the App Store. Download for Mac or iOS, sync with
+                    iCloud and you’re ready to start adding to your clipboard.</p>
+            </div>
+            <div class="row mt-5 container justify-content-md-center">
+                <button type="button " class="btn seagreen-btn col-md-4 mt-3 mb-3">Download for iOS</button>
+                <button type="button " class="btn offset-md-1 blue-btn col-md-4 mt-3 mb-3">Download for Mac</button>
+                <!-- <a class="btn blue-btn col-md-5" href="#" role="button mt-3 mb-3">Link</a> -->
+            </div>
+        </div>
+        <footer class="pt-5 pb-5">
+            <div class="logo">
+                <img src="./images/logo.svg" class="mt-4 mb-4" alt="logo">
+            </div>
+            <div class="links">
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Poilcy</a>
+                <a href="#">Install Guide</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Press Kit</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </footer>
+    </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

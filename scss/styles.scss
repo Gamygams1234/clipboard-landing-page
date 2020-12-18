@@ -1,10 +1,17 @@
 $darkgreyishblue: hsl(210, 10%, 33%);
 $greyishblue: hsl(201, 11%, 66%);
+h1 {
+    font-size: 2.5em;
+}
+p {
+    line-height: 1.5;
+}
+
 .btn {
     font-weight: 600;
     font-size: 18px;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     border-radius: 2em;
     color: white;
 }
@@ -35,21 +42,167 @@ $greyishblue: hsl(201, 11%, 66%);
 body {
     font-family: "Bai Jamjuree", sans-serif;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
     .content {
         min-height: 100vh;
-        background-image: url("../images/bg-header-desktop.png");
+        background-image: url("../images/bg-header-mobile.png");
         background-repeat: no-repeat;
         background-size: contain;
         header {
-            position: relative;
-            top: 5em;
             text-align: center;
             .main-logo {
+                height: 250px;
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 img {
                     height: 150px;
                     width: auto;
+                }
+            }
+        }
+        .section-2 {
+            text-align: center;
+        }
+        .section-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            .computer-image {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 95%;
+                    height: auto;
+                }
+            }
+            .paragraphs {
+                display: grid;
+                grid-template-columns: 1fr;
+                .paragraph {
+                    text-align: center;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .section-4 {
+            text-align: center;
+        }
+        .section-5 {
+            text-align: center;
+        }
+        .section-6 {
+            display: grid;
+            grid-template-columns: 1fr;
+            .item {
+                text-align: center;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
+        .section-7 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-8 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: hsl(210, 11, 96);
+            display: grid;
+            grid-template-columns: 1fr;
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+            .links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: $darkgreyishblue;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                a:hover {
+                    color: hsl(171, 66, 44);
+                }
+            }
+            .social-media {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    color: $darkgreyishblue;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
+                a:hover {
+                    color: hsl(171, 66, 44);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        .content {
+            background-image: url("../images/bg-header-desktop.png");
+            .section-3 {
+                grid-template-columns: 60% 40%;
+                .computer-image {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+
+                        position: relative;
+                        left: -2.5em;
+                    }
+                }
+                .paragraphs {
+                    .paragraph {
+                        width: 60%;
+                        text-align: left;
+                    }
+                }
+            }
+            .section-6 {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .section-7 {
+                flex-direction: row;
+            }
+            footer {
+                grid-template-columns: 1fr 2fr 1fr;
+                .links {
+                    flex-wrap: wrap;
+                    text-align: left;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: flex-start;
+                    a {
+                        width: 200px;
+                    }
                 }
             }
         }

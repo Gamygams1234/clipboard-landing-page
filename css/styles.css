@@ -1,8 +1,16 @@
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  line-height: 1.5;
+}
+
 .btn {
   font-weight: 600;
   font-size: 18px;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   border-radius: 2em;
   color: white;
 }
@@ -36,23 +44,160 @@
 body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 body .content {
   min-height: 100vh;
-  background-image: url("../images/bg-header-desktop.png");
+  background-image: url("../images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 body .content header {
-  position: relative;
-  top: 5em;
   text-align: center;
 }
 body .content header .main-logo {
+  height: 250px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 body .content header .main-logo img {
   height: 150px;
   width: auto;
+}
+body .content .section-2 {
+  text-align: center;
+}
+body .content .section-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body .content .section-3 .computer-image {
+  display: flex;
+  justify-content: center;
+}
+body .content .section-3 .computer-image img {
+  width: 95%;
+  height: auto;
+}
+body .content .section-3 .paragraphs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body .content .section-3 .paragraphs .paragraph {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+body .content .section-4 {
+  text-align: center;
+}
+body .content .section-5 {
+  text-align: center;
+}
+body .content .section-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body .content .section-6 .item {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+body .content .section-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .content .section-8 {
+  text-align: center;
+}
+body .content footer {
+  background-color: #f4f5f6;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body .content footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content footer .logo img {
+  width: 100px;
+  height: auto;
+}
+body .content footer .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .content footer .links a {
+  text-decoration: none;
+  color: #4c545d;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+body .content footer .links a:hover {
+  color: #26baa4;
+}
+body .content footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content footer .social-media a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #4c545d;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+body .content footer .social-media a:hover {
+  color: #26baa4;
+}
+
+@media screen and (min-width: 768px) {
+  body .content {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  body .content .section-3 {
+    grid-template-columns: 60% 40%;
+  }
+  body .content .section-3 .computer-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  body .content .section-3 .computer-image img {
+    width: 100%;
+    position: relative;
+    left: -2.5em;
+  }
+  body .content .section-3 .paragraphs .paragraph {
+    width: 60%;
+    text-align: left;
+  }
+  body .content .section-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body .content .section-7 {
+    flex-direction: row;
+  }
+  body .content footer {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  body .content footer .links {
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  body .content footer .links a {
+    width: 200px;
+  }
 }
