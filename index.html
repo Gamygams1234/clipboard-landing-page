@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Clipboard landing page</title>
@@ -53,20 +54,20 @@
                 <img src="./images/image-computer.png" alt="">
             </div>
             <div class="paragraphs mt-5 mb-5">
-                <div class="paragraph">
+                <div class="paragraph" data-aos="fade-left">
                     <h3 class="fw-600 dark-grey-blue max">
                         Quick Search
                     </h3>
                     <p class="mt-4 grey-blue fw-400 max">Easily search your snippets by content, category, web address,
                         application, and more.</p>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph" data-aos="fade-left">
                     <h3 class="fw-600 dark-grey-blue max">
                         iCloud Sync
                     </h3>
                     <p class="mt-4 grey-blue fw-400 max">Instantly saves and syncs snippets across all your devices.</p>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph" data-aos="fade-left">
                     <h3 class="fw-600 dark-grey-blue max">
                         Complete History
                     </h3>
@@ -101,7 +102,7 @@
             </div>
         </div>
         <div class="section-6 mt-5 mb-5 container">
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                 <img src="./images/icon-blacklist.svg" class="mt-4 mb-4" alt="">
                 <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
                     Create blacklists
@@ -109,7 +110,7 @@
                 <p class="mt-4 mb-4 grey-blue fw-400">
                     Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                 <img src="./images/icon-text.svg" class="mt-4 mb-4" alt="">
                 <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
                     Plain text snippets
@@ -117,7 +118,7 @@
                 <p class="mt-4 mb-4 grey-blue fw-400">
                     Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="./images/icon-preview.svg" class="mt-4 mb-4" alt="">
                 <h3 class="fw-600 mt-4 mb-4 dark-grey-blue">
                     Sneak preview
@@ -134,7 +135,7 @@
             <img src="./images/logo-vector-graphics.png" class="mt-4 mb-4" alt="">
 
         </div>
-        <div class="section-8 container mb-5 pb-5 justify-content-center mt-5">
+        <div class="section-8 container mb-5 pb-5 justify-content-center mt-5" data-aos="zoom-in">
             <div class="row mt-2 ">
                 <h2 class="fw-600 dark-grey-blue">
                     Clipboard for iOS and Mac OS
@@ -177,6 +178,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // making the duration
+        AOS.init({
+            offset: 210,
+            duration: 1100
+        });
+    </script>
 </body>
 
 </html>

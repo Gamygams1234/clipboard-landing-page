@@ -5,7 +5,14 @@ h1 {
 p {
   line-height: 1.5;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   font-weight: 600;
   font-size: 18px;
@@ -54,6 +61,8 @@ body .content {
   background-size: contain;
 }
 body .content header {
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
   text-align: center;
 }
 body .content header .main-logo {
@@ -76,6 +85,8 @@ body .content .section-3 {
 body .content .section-3 .computer-image {
   display: flex;
   justify-content: center;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
 }
 body .content .section-3 .computer-image img {
   width: 95%;
@@ -92,6 +103,8 @@ body .content .section-3 .paragraphs .paragraph {
 }
 body .content .section-4 {
   text-align: center;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
 }
 body .content .section-5 {
   text-align: center;
