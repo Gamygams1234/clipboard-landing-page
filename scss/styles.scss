@@ -60,6 +60,7 @@ body {
     font-size: 18px;
     padding: 0;
     margin: 0;
+    overflow-y: hidden;
     .content {
         min-height: 100vh;
         background-image: url("../images/bg-header-mobile.png");

@@ -53,6 +53,7 @@ body {
   font-size: 18px;
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
 }
 body .content {
   min-height: 100vh;
